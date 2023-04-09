@@ -1,0 +1,35 @@
+.toCat {
+  position: relative;
+}
+
+.toCat img {
+  width: 100%;
+  height: 100%;
+}
+
+.toCat .nameTop {
+  position: relative;
+  width: 100%;
+}
+
+.toCat .nameTop span {
+  background-color: #0f3460;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  margin: 5px;
+  position: absolute;
+  top: 0;
+}
+
+.toCat .nameTop .tleft {
+  left: 0;
+}
+
+.toCat .nameTop .tright {
+  background-color: aliceblue;
+  color: #000;
+  position: absolute;
+  right: 0;
+}
