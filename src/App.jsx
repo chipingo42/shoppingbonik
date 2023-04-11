@@ -56,7 +56,7 @@ function App() {
           <Route path='/' element={<Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems}  />}></Route>
           <Route path='/cart' exact element={ <Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} />} />
         </Routes>
-        {/* <Footer/>   */}
+        <Footer/>  
       </Router>
     </div>
   );

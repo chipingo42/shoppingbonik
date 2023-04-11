@@ -78,10 +78,10 @@ const Categories = () => {
       <div className="categories d_flex"  style={styles} onClick={() => setCategory(!category)}>
         <span className="fa fa-border-all"></span>
         <h4>
-          Categories  {!category ? <i className="fa fa-chevron-up"></i> : <i className="fa fa-chevron-down"></i> }
+          Categories  {!category ? <i className="fa fa-chevron-down"></i> : <i className="fa fa-chevron-up"></i> }
         </h4>
       </div>
-      {category && <section className="category">
+      {!category && <section className="category">
         {
           data.map((value, idx) => (
             <div className="box f_flex" key={idx}>

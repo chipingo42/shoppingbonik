@@ -23,32 +23,32 @@ const Footer = () => {
 
         <div className="box">
           <h2>About Us</h2>
-          <ul>
-            <li>Careers</li>
-            <li>Our Stores</li>
-            <li>Our Cares</li>
-            <li>Terms & Conditions</li>
-            <li>Privacy Policy</li>
-          </ul>
+          <div>
+            <p>Careers</p>
+            <p>Our Stores</p>
+            <p>Our Cares</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Poplicy</p>
+          </div>
         </div>
 
         <div className="box">
           <h2>Customer Care</h2>
-          <ul>
-            <li>Help Center </li>
-            <li>How to Buy </li>
-            <li>Track Your Order </li>
-            <li>Corporate & Bulk Purchasing </li>
-            <li>Returns & Refunds </li>
-          </ul>
+          <div>
+            <p>Help Center </p>
+            <p>How to Buy </p>
+            <p>Track Your Order </p>
+            <p>Corporate & Bulk Purchasing </p>
+            <p>Returns & Refunds </p>
+          </div>
         </div>
         <div className='box'>
           <h2>Contact Us</h2>
-          <ul>
-            <li>70 Washington Square South, New York, NY 10012, United States </li>
-            <li>Email: uilib.help@gmail.com</li>
-            <li>Phone: +1 1123 456 780</li>
-          </ul>
+          <div>
+            <p>70 Washington Square South, New York, NY 10012, United States </p>
+            <p>Email: uipb.help@gmail.com</p>
+            <p>Phone: +1 1123 456 780</p>
+          </div>
         </div>
       </div>
     </footer>
