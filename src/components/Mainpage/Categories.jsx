@@ -17,6 +17,15 @@ import cat11 from '../../assets/category/cat11.png'
 
 const Categories = () => {
 
+  // style={{ position: "absolute", top: '130px'}}
+
+  const [category, setCategory] = useState(false)
+
+  const styles = {
+    position: "absolute",
+    top: '130px',
+  }
+
   const data = [
     {
       cateImg:  cat1,
@@ -66,13 +75,13 @@ const Categories = () => {
 
   return (
     <>
-      {/* <div className="categories d_flex" style={{ position: "absolute", top: '130px'}} onClick={() => setCategores(!Category)}>
+      <div className="categories d_flex"  style={styles} onClick={() => setCategory(!category)}>
         <span className="fa fa-border-all"></span>
         <h4>
-          Categories {!Category ? <i className="fa fa-chevron-down"></i> : <i className="fa fa-chevron-up"></i> }
+          Categories  {!category ? <i className="fa fa-chevron-up"></i> : <i className="fa fa-chevron-down"></i> }
         </h4>
-      </div> */}
-      <section className="category">
+      </div>
+      {category && <section className="category">
         {
           data.map((value, idx) => (
             <div className="box f_flex" key={idx}>
@@ -81,7 +90,7 @@ const Categories = () => {
             </div>
           ))
         }
-      </section>
+      </section>}
     </>
   )
 }

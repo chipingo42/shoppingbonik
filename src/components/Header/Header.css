@@ -122,6 +122,8 @@ header {
 
 header ul {
   line-height: 8vh;
+  position: absolute;
+  right: 63px;
 }
 
 header ul li {
