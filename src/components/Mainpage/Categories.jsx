@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import cat1 from '../../assets/category/cat1.png'
 import cat2 from '../../assets/category/cat2.png'
 import cat3 from '../../assets/category/cat3.png'
@@ -10,6 +10,8 @@ import cat8 from '../../assets/category/cat8.png'
 import cat9 from '../../assets/category/cat9.png'
 import cat10 from '../../assets/category/cat10.png'
 import cat11 from '../../assets/category/cat11.png'
+
+
 
 
 
@@ -64,12 +66,18 @@ const Categories = () => {
 
   return (
     <>
+      {/* <div className="categories d_flex" style={{ position: "absolute", top: '130px'}} onClick={() => setCategores(!Category)}>
+        <span className="fa fa-border-all"></span>
+        <h4>
+          Categories {!Category ? <i className="fa fa-chevron-down"></i> : <i className="fa fa-chevron-up"></i> }
+        </h4>
+      </div> */}
       <section className="category">
         {
           data.map((value, idx) => (
             <div className="box f_flex" key={idx}>
               <img src={value.cateImg} alt="" />
-              <span>{value.cateName}</span>
+              <span>{value.cateName}</span>          
             </div>
           ))
         }
@@ -78,4 +86,4 @@ const Categories = () => {
   )
 }
 
-export default Categories
+export default Categories;

@@ -6,6 +6,7 @@ import Slider from "react-slick";
 
 const SlideCard = () => {
 
+
   const settings = {
     dots: true,
     infinite: true,
@@ -25,7 +26,7 @@ const SlideCard = () => {
         {
           Sdata.map((val, i) => {
             return (
-              <div key={i} className="box d_flex top">
+              <div key={i} className="box top">
                 <div className="left">
                   <h1>{val.title}</h1>
                   <p>{val.desc}</p>

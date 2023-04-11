@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import useMediaQuery from '../../hooks/useMediaQuery'
 import {  Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 
+
 const Navbar = () => {
 
   const [mobileMenu, setMobileMenu] = useState(false)
@@ -15,7 +16,7 @@ const Navbar = () => {
           <div className="categories d_flex">
             <span className="fa fa-border-all"></span>
             <h4>
-              Categories <i className="fa fa-chevron-down"></i>
+              Categories <i className="fa fa-chevron-down"></i> 
             </h4>
           </div>
           <div className="navlink">
@@ -37,8 +38,8 @@ const Navbar = () => {
                   <Link to="/contact">Contact</Link>
                 </li>
               </ul>) : ( 
-              <button className='toggle' onClick={() => setMobileMenu(!mobileMenu)}>
-                {!mobileMenu ?  <Bars3Icon className='bar_open'/> : ''}
+              <button className='toggle'  onClick={() => setMobileMenu(!mobileMenu)}>
+                {!mobileMenu ? <Bars3Icon className='bar_open'/> : ''}
               </button>
             )}
           </div>

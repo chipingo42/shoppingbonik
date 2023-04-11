@@ -3,10 +3,12 @@
 }
 .homeSlide h1 {
   font-size: 45px;
+  max-width: 390px;
 }
 
 .homeSlide p {
   margin: 20px 0;
+  max-width: 390px;
 }
 
 .homeSlide ul {

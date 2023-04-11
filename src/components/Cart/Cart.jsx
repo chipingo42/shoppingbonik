@@ -29,11 +29,11 @@ const Cart = ({CartItem, addToCart, decreaseQty }) => {
                     </h4>
                   </div>
                   <div className="cat-item-function">
-                    <div className="removeCart">
-                      <button>
+                    {/* <div className="removeCart">
+                      <button onClick={() => decreaseQty(item.qty)}>
                         <XMarkIcon />
                       </button>
-                    </div>
+                    </div> */}
                     <div className="cartControl d_flex">
                       <button className='incCart' onClick={() => addToCart(item)}>
                         <i className="fa fa-plus"></i>

@@ -1,12 +1,14 @@
 import Header from "./components/Header/Header";
 import './App.css'
 import Data from "./components/FlashDeals/Data";
-import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route, json } from "react-router-dom"
 import Pages from "./Pages/Pages";
 import Cart from './components/Cart/Cart'
 import Sdata from './components/Shops/Sdata'
 import Footer from "./components/Footer/Footer";
+import axios from "axios";
+
 
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
   const { productItems } = Data;
   const { shopItems } = Sdata;
   const [CartItem, setCartItem] = useState([])
+  // const [productItems, setProductItems] = useState([])
 
 
   const addToCart = (product) => {
@@ -35,8 +38,16 @@ function App() {
     }
   }
 
+  // useEffect(() => {
+  //   fetch(`https://fakestoreapi.com/products`)
+  //   .then((res) => res.json())
+  //   .then((data1) => {
+  //     setProductItems(data1)
+  //     console.log(data1);
+  //   })
+  // }, [])
 
-
+  
   return (
     <div>
       <Router>
@@ -45,7 +56,7 @@ function App() {
           <Route path='/' element={<Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems}  />}></Route>
           <Route path='/cart' exact element={ <Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} />} />
         </Routes>
-        <Footer/>  
+        {/* <Footer/>   */}
       </Router>
     </div>
   );
