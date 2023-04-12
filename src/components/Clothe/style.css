@@ -1,0 +1,103 @@
+.heading img {
+  height: 50px;
+  /* width: 100; */
+}
+
+
+.clothes img {
+  width: 100px;
+  height: 100px;
+  margin-top: 40px;
+}
+
+
+.f_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.clothes {
+  width: 200px;
+  /* min-height: 250px; */
+  /* padding: 20px; */
+  background: #fff;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgba(3 0 71 / 9%) 0 1px 3px;
+}
+
+.clothes .img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.clothes h3 {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.clothes .product_details {
+  margin: 10px;
+}
+
+.clothes .rate i {
+  font-size: 15px;
+  color: #ffcd4f;
+  margin: 5px 5px 5px 0;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  color: #e94560;
+}
+
+.clothes button {
+  background: none;
+  color: #e94560;
+  font-size: 20px;
+  border: 1px solid rgba(3 0 71 / 9%);
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  transition: 0.5s;
+  /* margin: 10px; */
+}
+
+.clothes button:hover {
+  cursor: pointer;
+  background: #e94560;
+  color: #ffffff;
+}
+
+.product_like {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.product_like label {
+  background-color: #0f3460;
+  padding: 1px 10px;
+  font-size: 12px;
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+.product_like i {
+  font-size: 20px;
+  /* margin: 10px 3px; */
+}
+
+.clothes:hover .product_like {
+  opacity: 1;
+  cursor: pointer;
+  padding: 0 10px;
+}

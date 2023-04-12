@@ -1,8 +1,8 @@
-import { XMarkIcon } from '@heroicons/react/24/solid'
+
 import React from 'react'
 import './Cart.css'
 
-const Cart = ({CartItem, addToCart, decreaseQty }) => {
+const Cart = ({ CartItem, addToCart, decreaseQty }) => {
 
   const totalPrice = CartItem.reduce((price,item) => price + item.qty * item.price, 0 )
 
@@ -19,10 +19,10 @@ const Cart = ({CartItem, addToCart, decreaseQty }) => {
               return (
                 <div className="cart_list product d_flex" key={item.id}>
                   <div className="img">
-                    <img src={item.cover} alt="" />
+                    <img src={item.image} alt="" />
                   </div>
                   <div className="cart-details">
-                    <h3>{item.name}</h3>
+                    <h3>{item.title}</h3>
                     <h4>
                       {item.price}.00 * {item.qty}
                       <span>${productQty}.00</span> 

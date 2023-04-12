@@ -7,10 +7,12 @@ import Discount from '../components/Discount/Discount'
 import Shop from '../components/Shops/Shop'
 import Annoncement from '../components/Annoncement/Annoncement'
 import Wrapper from '../components/Wrapper/Wrapper'
+import AllClothes from '../components/Clothe/AllClothes'
 
 
 
-const Pages = ({ productItems, addToCart, shopItems }) => {
+
+const Pages = ({ productItems, addToCart, shopItems, Clothe }) => {
   return (
     <div>
       <Home  />
@@ -19,6 +21,7 @@ const Pages = ({ productItems, addToCart, shopItems }) => {
       <NewArrivals /> 
       <Discount />
       <Shop shopItems={shopItems} addToCart={addToCart} />
+      <AllClothes Clothe={Clothe} addToCart={addToCart} />
       <Annoncement />
       <Wrapper />
     </div>

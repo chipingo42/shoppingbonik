@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Slider from 'react-slick/lib/slider';
 
 
 
@@ -21,14 +20,14 @@ const FlashCard = ({ shopItems, addToCart }) => {
             <div className="product mtop">
               <div className="img">
                 <span className='discount'> {shopItem.discount}% off</span>
-                <img src={shopItem.cover} alt="" />
+                <img src={shopItem.image} alt="" />
                 <div className="product_like">
                   <label>{count}</label> <br />
                   <i className="fa fa-heart" onClick={inCreament}></i>
                 </div>
               </div>
               <div className="product_details">
-                <h3>{shopItem.name}</h3>
+                <h3>{shopItem.title}</h3>
                 <div className="rate">
                   <i className="fa fa-star"></i>
                   <i className="fa fa-star"></i>
